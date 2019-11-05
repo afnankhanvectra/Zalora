@@ -51,6 +51,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userInputTextView.becomeFirstResponder()
         userInputTextView.delegate = self
     }
     
@@ -61,6 +62,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func checkStringButtonClicked(_ sender: UIButton) {
+        userInputTextView.endEditing(true)
         splitMessage(withString: userInputTextView.text)
     }
     //MARK: Business logic
@@ -222,7 +224,7 @@ extension ViewController : UITextViewDelegate {
         
         if !(textView.text.isEmpty) {
         }
-        let fixedWidth = textView.frame.size.width
+        let fixedWidth = UIScreen.main.bounds.width * 0.9
         let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT)))
         var newFrame = textView.frame
         newFrame.size = CGSize(width: CGFloat(fmaxf(Float(newSize.width), Float(fixedWidth))) , height: newSize.height)
