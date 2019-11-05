@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var userInputTextView  :    UITextView!
     @IBOutlet var tweetTableView     :    UITableView!
     
- 
+    
     //MARK:  Constant
     
     let withourSpaceString = "Itisalongestablishedfactthatareaderwillbedistractedbythereadablecontentofapagewhenlookingatitslayout"
@@ -35,49 +35,56 @@ class ViewController: UIViewController {
             tweetTableView.reloadData()
         }
     }
-    
+    // If text has any error , show the error lable with error text else hide the error label
     var errorText : String  = "" {
         didSet{
             errorLabel.text = errorText
             errorLabel.isHidden = errorText.count == 0
         }
-        
-    }
+     }
     var selectedString = ""
     
     lazy var  wordsArray = selectedString.split(separator: " ")
-    var heightOfTextView: CGFloat = 60
-
+ 
     
     //MARK: Applicatin Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         userInputTextView.delegate = self
-     }
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        adjustUITextViewHeight(arg: userInputTextView)
+        adjustUITextViewHeight(ofTextView:  userInputTextView)
     }
+    
     @IBAction func checkStringButtonClicked(_ sender: UIButton) {
-        selectedString = userInputTextView.text
+        splitMessage(withString: userInputTextView.text)
+    }
+    /** Split the tweets into different tweets***/
+    @discardableResult func splitMessage(withString messageString : String) -> [String]?{
+        
+        selectedString = messageString
         wordsArray = selectedString.split(separator: " ")
         
         if isSingleTweet == true {
             postTweets([selectedString])
-            return
+            return [selectedString]
         }
         if isTweetWithoutSpace == true {
             showError(withMessage: "Tweet Can not break")
-            return
+            return nil
         }
         
-        postTweets(splitMessage())
-    }
-    
-    func splitMessage() -> [String]{
+        let multipleTweets = createMultipleTweets()
+        postTweets((multipleTweets))
         
+        return multipleTweets
+        
+        
+    }
+    func createMultipleTweets() -> [String]{
         var array : [String] = [String]()
         let numberOfTweets =     getNumberOfTweets()
         for index in 0..<numberOfTweets {
@@ -87,6 +94,8 @@ class ViewController: UIViewController {
         }
         return array
     }
+    
+    
     
     
     var isSingleTweet :  Bool {
@@ -135,17 +144,14 @@ class ViewController: UIViewController {
     }
     
     
-  
+    
 }
+// MARK: TableView datasource
 
 extension ViewController : UITableViewDataSource {
     
-    func adjustUITextViewHeight(arg : UITextView) {
-          arg.translatesAutoresizingMaskIntoConstraints = true
-          arg.sizeToFit()
-          arg.isScrollEnabled = false
-      }
-    
+    /** Number of rowsn depends on tweet data **/
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tweetArray.count
     }
@@ -156,7 +162,7 @@ extension ViewController : UITableViewDataSource {
         return cell
     }
     
- 
+    
 }
 
 
@@ -164,26 +170,31 @@ extension ViewController : UITableViewDataSource {
 
 // MARK: TextView delegate
 extension ViewController : UITextViewDelegate {
-
-   
-   // MARK: UITextView Delegate
-   func textViewDidChange(_ textView: UITextView) {
-       
-       if !(textView.text.isEmpty) {
+    
+    /** Textview Height can be changed according to text  We allow textView to change by translate autio resizing**/
+    func adjustUITextViewHeight(ofTextView textView : UITextView) {
+        textView.translatesAutoresizingMaskIntoConstraints = true
+        textView.sizeToFit()
+        textView.isScrollEnabled = false
+    }
+    
+    /** This function will change the height of Text View according to text.
+     **/
+    // MARK: UITextView Delegate
+    func textViewDidChange(_ textView: UITextView) {
+        
+        if !(textView.text.isEmpty) {
         }
-       let fixedWidth = textView.frame.size.width
-       let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT)))
+        let fixedWidth = textView.frame.size.width
+        let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT)))
         var newFrame = textView.frame
         newFrame.size = CGSize(width: CGFloat(fmaxf(Float(newSize.width), Float(fixedWidth))) , height: newSize.height)
-      // textView.frame = newFrame
-       if ceil(heightOfTextView) != ceil(newSize.height) {
-           heightOfTextView = newSize.height
-        }
-    textView.frame = newFrame
-       UIView.performWithoutAnimation {
-           view.layoutIfNeeded()
-       }
  
-   }
-
+        textView.frame = newFrame
+        UIView.performWithoutAnimation {
+            view.layoutIfNeeded()
+        }
+        
+    }
+    
 }
