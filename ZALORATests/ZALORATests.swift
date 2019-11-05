@@ -25,7 +25,6 @@ class ZALORATests: XCTestCase {
         controller = vc
         controller.loadViewIfNeeded()
         
-        
     }
     
     override func tearDown() {
@@ -33,14 +32,31 @@ class ZALORATests: XCTestCase {
         controller =  nil
     }
     
+    func test_isSingleTweet(){
+        
+        let testingTweet = "I can't believe Tweeter now supports "
+ 
+        let isSingleTweet = controller?.isSingleTweet( tweet : testingTweet)
+        XCTAssertEqual(isSingleTweet, true, "This should be single tweet")
+     }
+    
+    func test_isTweetWithoutSpace(){
+        let testingTweet = "Itisalongestabl"
+        let isWithoutSingleTweet = controller?.isTweetWithoutSpace( tweet : testingTweet)
+
+     XCTAssertEqual(isWithoutSingleTweet, false, "This tweet has more than 50 charatcer without Space")
+
+    }
+    
+     
+    
     
     func test_SplitMessage(){
-       
-    
-    guard let tweetMessages = controller?.splitMessage(withString:  "I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.") else {
-        XCTFail("Tweet is not according to requirment")
-        return
-      }
+        
+        guard let tweetMessages = controller?.splitMessage(withString:  "I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.") else {
+            XCTFail("Tweet is not according to requirment")
+            return
+        }
         print("Tweet Success \(tweetMessages)")
     }
     
