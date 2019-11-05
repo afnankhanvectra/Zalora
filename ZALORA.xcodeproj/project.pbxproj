@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C55BD1B2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55BD1A2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift */; };
+		9CAA9C43236B93C40070C14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAA9C42236B93C40070C14A /* AppDelegate.swift */; };
+		9CAA9C45236B93C40070C14A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAA9C44236B93C40070C14A /* SceneDelegate.swift */; };
+		9CAA9C47236B93C40070C14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAA9C46236B93C40070C14A /* ViewController.swift */; };
+		9CAA9C4A236B93C40070C14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAA9C48236B93C40070C14A /* Main.storyboard */; };
+		9CAA9C4C236B93C60070C14A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAA9C4B236B93C60070C14A /* Assets.xcassets */; };
+		9CAA9C4F236B93C60070C14A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAA9C4D236B93C60070C14A /* LaunchScreen.storyboard */; };
+		9CED1DFF23718FF2006A1FC7 /* ZALORATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CED1DFE23718FF2006A1FC7 /* ZALORATests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CED1E0123718FF2006A1FC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CAA9C37236B93C40070C14A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CAA9C3E236B93C40070C14A;
+			remoteInfo = ZALORA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C55BD1A2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLTweetTableViewCell.swift; sourceTree = "<group>"; };
+		9CAA9C3F236B93C40070C14A /* ZALORA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZALORA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CAA9C42236B93C40070C14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CAA9C44236B93C40070C14A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9CAA9C46236B93C40070C14A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CAA9C49236B93C40070C14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CAA9C4B236B93C60070C14A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CAA9C4E236B93C60070C14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CAA9C50236B93C60070C14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CED1DFC23718FF2006A1FC7 /* ZALORATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZALORATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CED1DFE23718FF2006A1FC7 /* ZALORATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZALORATests.swift; sourceTree = "<group>"; };
+		9CED1E0023718FF2006A1FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CAA9C3C236B93C40070C14A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CED1DF923718FF2006A1FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CAA9C36236B93C40070C14A = {
+			isa = PBXGroup;
+			children = (
+				9CAA9C41236B93C40070C14A /* ZALORA */,
+				9CED1DFD23718FF2006A1FC7 /* ZALORATests */,
+				9CAA9C40236B93C40070C14A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CAA9C40236B93C40070C14A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CAA9C3F236B93C40070C14A /* ZALORA.app */,
+				9CED1DFC23718FF2006A1FC7 /* ZALORATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CAA9C41236B93C40070C14A /* ZALORA */ = {
+			isa = PBXGroup;
+			children = (
+				9CAA9C42236B93C40070C14A /* AppDelegate.swift */,
+				9CAA9C44236B93C40070C14A /* SceneDelegate.swift */,
+				9CAA9C46236B93C40070C14A /* ViewController.swift */,
+				9C55BD1A2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift */,
+				9CAA9C48236B93C40070C14A /* Main.storyboard */,
+				9CAA9C4B236B93C60070C14A /* Assets.xcassets */,
+				9CAA9C4D236B93C60070C14A /* LaunchScreen.storyboard */,
+				9CAA9C50236B93C60070C14A /* Info.plist */,
+			);
+			path = ZALORA;
+			sourceTree = "<group>";
+		};
+		9CED1DFD23718FF2006A1FC7 /* ZALORATests */ = {
+			isa = PBXGroup;
+			children = (
+				9CED1DFE23718FF2006A1FC7 /* ZALORATests.swift */,
+				9CED1E0023718FF2006A1FC7 /* Info.plist */,
+			);
+			path = ZALORATests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CAA9C3E236B93C40070C14A /* ZALORA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CAA9C53236B93C60070C14A /* Build configuration list for PBXNativeTarget "ZALORA" */;
+			buildPhases = (
+				9CAA9C3B236B93C40070C14A /* Sources */,
+				9CAA9C3C236B93C40070C14A /* Frameworks */,
+				9CAA9C3D236B93C40070C14A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZALORA;
+			productName = ZALORA;
+			productReference = 9CAA9C3F236B93C40070C14A /* ZALORA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CED1DFB23718FF2006A1FC7 /* ZALORATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CED1E0523718FF2006A1FC7 /* Build configuration list for PBXNativeTarget "ZALORATests" */;
+			buildPhases = (
+				9CED1DF823718FF2006A1FC7 /* Sources */,
+				9CED1DF923718FF2006A1FC7 /* Frameworks */,
+				9CED1DFA23718FF2006A1FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CED1E0223718FF2006A1FC7 /* PBXTargetDependency */,
+			);
+			name = ZALORATests;
+			productName = ZALORATests;
+			productReference = 9CED1DFC23718FF2006A1FC7 /* ZALORATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CAA9C37236B93C40070C14A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Afnan Khan";
+				TargetAttributes = {
+					9CAA9C3E236B93C40070C14A = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					9CED1DFB23718FF2006A1FC7 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9CAA9C3E236B93C40070C14A;
+					};
+				};
+			};
+			buildConfigurationList = 9CAA9C3A236B93C40070C14A /* Build configuration list for PBXProject "ZALORA" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CAA9C36236B93C40070C14A;
+			productRefGroup = 9CAA9C40236B93C40070C14A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CAA9C3E236B93C40070C14A /* ZALORA */,
+				9CED1DFB23718FF2006A1FC7 /* ZALORATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CAA9C3D236B93C40070C14A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CAA9C4F236B93C60070C14A /* LaunchScreen.storyboard in Resources */,
+				9CAA9C4C236B93C60070C14A /* Assets.xcassets in Resources */,
+				9CAA9C4A236B93C40070C14A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CED1DFA23718FF2006A1FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CAA9C3B236B93C40070C14A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CAA9C47236B93C40070C14A /* ViewController.swift in Sources */,
+				9CAA9C43236B93C40070C14A /* AppDelegate.swift in Sources */,
+				9CAA9C45236B93C40070C14A /* SceneDelegate.swift in Sources */,
+				9C55BD1B2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CED1DF823718FF2006A1FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CED1DFF23718FF2006A1FC7 /* ZALORATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CED1E0223718FF2006A1FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CAA9C3E236B93C40070C14A /* ZALORA */;
+			targetProxy = 9CED1E0123718FF2006A1FC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CAA9C48236B93C40070C14A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CAA9C49236B93C40070C14A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CAA9C4D236B93C60070C14A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CAA9C4E236B93C60070C14A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CAA9C51236B93C60070C14A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CAA9C52236B93C60070C14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CAA9C54236B93C60070C14A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZALORA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.testingApp.ZALORA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9CAA9C55236B93C60070C14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZALORA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.testingApp.ZALORA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9CED1E0323718FF2006A1FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZALORATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.testingApp.ZALORATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZALORA.app/ZALORA";
+			};
+			name = Debug;
+		};
+		9CED1E0423718FF2006A1FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZALORATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.testingApp.ZALORATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZALORA.app/ZALORA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CAA9C3A236B93C40070C14A /* Build configuration list for PBXProject "ZALORA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CAA9C51236B93C60070C14A /* Debug */,
+				9CAA9C52236B93C60070C14A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CAA9C53236B93C60070C14A /* Build configuration list for PBXNativeTarget "ZALORA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CAA9C54236B93C60070C14A /* Debug */,
+				9CAA9C55236B93C60070C14A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CED1E0523718FF2006A1FC7 /* Build configuration list for PBXNativeTarget "ZALORATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CED1E0323718FF2006A1FC7 /* Debug */,
+				9CED1E0423718FF2006A1FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CAA9C37236B93C40070C14A /* Project object */;
+}
