@@ -19,6 +19,9 @@
 		9CAA9C4A236B93C40070C14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAA9C48236B93C40070C14A /* Main.storyboard */; };
 		9CAA9C4C236B93C60070C14A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAA9C4B236B93C60070C14A /* Assets.xcassets */; };
 		9CAA9C4F236B93C60070C14A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAA9C4D236B93C60070C14A /* LaunchScreen.storyboard */; };
+		9CB147C9237F058300CBAC73 /* ZaloraDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB147C8237F058300CBAC73 /* ZaloraDataSource.swift */; };
+		9CB147CB237F0D6200CBAC73 /* ZalorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB147CA237F0D6200CBAC73 /* ZalorViewModel.swift */; };
+		9CB147CD237F0E5F00CBAC73 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB147CC237F0E5F00CBAC73 /* Const.swift */; };
 		9CED1DFF23718FF2006A1FC7 /* ZALORATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CED1DFE23718FF2006A1FC7 /* ZALORATests.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		9CAA9C4B236B93C60070C14A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CAA9C4E236B93C60070C14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CAA9C50236B93C60070C14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB147C8237F058300CBAC73 /* ZaloraDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloraDataSource.swift; sourceTree = "<group>"; };
+		9CB147CA237F0D6200CBAC73 /* ZalorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalorViewModel.swift; sourceTree = "<group>"; };
+		9CB147CC237F0E5F00CBAC73 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		9CED1DFC23718FF2006A1FC7 /* ZALORATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZALORATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CED1DFE23718FF2006A1FC7 /* ZALORATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZALORATests.swift; sourceTree = "<group>"; };
 		9CED1E0023718FF2006A1FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				9CAA9C42236B93C40070C14A /* AppDelegate.swift */,
 				9CAA9C44236B93C40070C14A /* SceneDelegate.swift */,
 				9CAA9C46236B93C40070C14A /* ViewController.swift */,
+				9CB147CA237F0D6200CBAC73 /* ZalorViewModel.swift */,
+				9CB147CC237F0E5F00CBAC73 /* Const.swift */,
+				9CB147C8237F058300CBAC73 /* ZaloraDataSource.swift */,
 				9C55BD1A2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift */,
 				9C6C52C223748C7400D2CA7D /* CountryCodeController.swift */,
 				9CAA9C48236B93C40070C14A /* Main.storyboard */,
@@ -233,8 +242,11 @@
 				9C6C52C323748C7400D2CA7D /* CountryCodeController.swift in Sources */,
 				9CAA9C45236B93C40070C14A /* SceneDelegate.swift in Sources */,
 				9C55BD1B2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift in Sources */,
+				9CB147C9237F058300CBAC73 /* ZaloraDataSource.swift in Sources */,
 				9C6C52C023743E8200D2CA7D /* ADCountryPicker.swift in Sources */,
 				9C6C52C123743E8200D2CA7D /* ADCountry.swift in Sources */,
+				9CB147CB237F0D6200CBAC73 /* ZalorViewModel.swift in Sources */,
+				9CB147CD237F0E5F00CBAC73 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
