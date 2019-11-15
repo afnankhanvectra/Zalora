@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9C55BD1B2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55BD1A2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift */; };
+		9C6C52BE23743E8200D2CA7D /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C6C52BA23743E8100D2CA7D /* assets.bundle */; };
+		9C6C52BF23743E8200D2CA7D /* CallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C6C52BB23743E8100D2CA7D /* CallingCodes.plist */; };
+		9C6C52C023743E8200D2CA7D /* ADCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6C52BC23743E8100D2CA7D /* ADCountryPicker.swift */; };
+		9C6C52C123743E8200D2CA7D /* ADCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6C52BD23743E8100D2CA7D /* ADCountry.swift */; };
+		9C6C52C323748C7400D2CA7D /* CountryCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6C52C223748C7400D2CA7D /* CountryCodeController.swift */; };
 		9CAA9C43236B93C40070C14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAA9C42236B93C40070C14A /* AppDelegate.swift */; };
 		9CAA9C45236B93C40070C14A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAA9C44236B93C40070C14A /* SceneDelegate.swift */; };
 		9CAA9C47236B93C40070C14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAA9C46236B93C40070C14A /* ViewController.swift */; };
@@ -29,6 +34,11 @@
 
 /* Begin PBXFileReference section */
 		9C55BD1A2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLTweetTableViewCell.swift; sourceTree = "<group>"; };
+		9C6C52BA23743E8100D2CA7D /* assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = assets.bundle; sourceTree = "<group>"; };
+		9C6C52BB23743E8100D2CA7D /* CallingCodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CallingCodes.plist; sourceTree = "<group>"; };
+		9C6C52BC23743E8100D2CA7D /* ADCountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADCountryPicker.swift; sourceTree = "<group>"; };
+		9C6C52BD23743E8100D2CA7D /* ADCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADCountry.swift; sourceTree = "<group>"; };
+		9C6C52C223748C7400D2CA7D /* CountryCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodeController.swift; sourceTree = "<group>"; };
 		9CAA9C3F236B93C40070C14A /* ZALORA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZALORA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAA9C42236B93C40070C14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CAA9C44236B93C40070C14A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +70,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C6C52B923743E8100D2CA7D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9C6C52BA23743E8100D2CA7D /* assets.bundle */,
+				9C6C52BB23743E8100D2CA7D /* CallingCodes.plist */,
+				9C6C52BC23743E8100D2CA7D /* ADCountryPicker.swift */,
+				9C6C52BD23743E8100D2CA7D /* ADCountry.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		9CAA9C36236B93C40070C14A = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +102,12 @@
 		9CAA9C41236B93C40070C14A /* ZALORA */ = {
 			isa = PBXGroup;
 			children = (
+				9C6C52B923743E8100D2CA7D /* Source */,
 				9CAA9C42236B93C40070C14A /* AppDelegate.swift */,
 				9CAA9C44236B93C40070C14A /* SceneDelegate.swift */,
 				9CAA9C46236B93C40070C14A /* ViewController.swift */,
 				9C55BD1A2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift */,
+				9C6C52C223748C7400D2CA7D /* CountryCodeController.swift */,
 				9CAA9C48236B93C40070C14A /* Main.storyboard */,
 				9CAA9C4B236B93C60070C14A /* Assets.xcassets */,
 				9CAA9C4D236B93C60070C14A /* LaunchScreen.storyboard */,
@@ -183,9 +206,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6C52BE23743E8200D2CA7D /* assets.bundle in Resources */,
 				9CAA9C4F236B93C60070C14A /* LaunchScreen.storyboard in Resources */,
 				9CAA9C4C236B93C60070C14A /* Assets.xcassets in Resources */,
 				9CAA9C4A236B93C40070C14A /* Main.storyboard in Resources */,
+				9C6C52BF23743E8200D2CA7D /* CallingCodes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +230,11 @@
 			files = (
 				9CAA9C47236B93C40070C14A /* ViewController.swift in Sources */,
 				9CAA9C43236B93C40070C14A /* AppDelegate.swift in Sources */,
+				9C6C52C323748C7400D2CA7D /* CountryCodeController.swift in Sources */,
 				9CAA9C45236B93C40070C14A /* SceneDelegate.swift in Sources */,
 				9C55BD1B2370CAD5000BE7A0 /* ZLTweetTableViewCell.swift in Sources */,
+				9C6C52C023743E8200D2CA7D /* ADCountryPicker.swift in Sources */,
+				9C6C52C123743E8200D2CA7D /* ADCountry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
